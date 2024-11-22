@@ -10,7 +10,7 @@
     - Erlang on the BEAM virtual machine
     - JavaScript (not WASM)
 
-## Structure
+## Structure of this repo 📂
 
 0. [Just me learning the very basics of Gleam](./learn_basics/)
 1. [A simple starter project to learn the basics](./vars/) (from https://gleam.run/writing-gleam/)
@@ -18,12 +18,13 @@
 1. [Websocket echo server](./echo_server/)
 1. [Websocket echo client to learn about the javascript target](./echo_client/)
 
-> **Devcontainer** 🚀
-> You can use the provided dev container to get the projects up and running.
+> **Devcontainer** 🚀 You can use the provided dev container to get the projects up and running.
 
 ## Some resources to learn about Gleam 📚
 
 - [Gleam Language Tour](https://tour.gleam.run/)
 - [Writing Gleam](https://gleam.run/writing-gleam/)
-- [Learn OTP with Gleam](https://github.com/bcpeinhardt/learn_otp_with_gleam/tree/main)
+- [Learn OTP with Gleam](https://github.com/bcpeinhardt/learn_otp_with_gleam/tree/main) (for a deeper dive into the erlang/OTP world their [documentation](https://www.erlang.org/doc/readme.html) itself is probably the right place to start)
 - [Gleam documentation collection](https://gleam.run/documentation/)
+- [Lustre Framework Tour](https://gleamtours.com/lustre-tutorial/introduction/welcome-to-lustre/)
+- *([Awesome Gleam](https://github.com/gleam-lang/awesome-gleam?tab=readme-ov-file#erlang-and-otp))*
