@@ -18,6 +18,9 @@
 1. [Websocket echo server](./echo_server/)
 1. [Websocket echo client to learn about the javascript target](./echo_client/)
 
+> **Devcontainer** 🚀
+> You can use the provided dev container to get the projects up and running.
+
 ## Some resources to learn about Gleam 📚
 
 - [Gleam Language Tour](https://tour.gleam.run/)
