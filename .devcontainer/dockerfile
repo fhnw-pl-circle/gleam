@@ -1,0 +1,7 @@
+FROM alpine:edge
+
+RUN apk add bash gleam erlang
+RUN wget "https://s3.amazonaws.com/rebar3/rebar3"
+RUN chmod +x rebar3
+RUN ./rebar3 local install
+ENV PATH="$PATH:/root/.cache/rebar3/bin"

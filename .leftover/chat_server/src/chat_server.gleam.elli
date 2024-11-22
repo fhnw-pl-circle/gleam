@@ -1,0 +1,27 @@
+import gleam/bytes_tree.{type BytesTree}
+import gleam/erlang/process
+import gleam/http.{Get, Post}
+import gleam/http/elli
+import gleam/http/request.{type Request}
+import gleam/http/response.{type Response}
+import gleam/io
+
+pub fn main() {
+  io.println("=== chat server ===")
+  elli.become(chat_service, on_port: 3000)
+
+  io.println("shut down")
+}
+
+fn chat_service(request: Request(t)) -> Response(BytesTree) {
+  let path = request.path_segments(request)
+
+  case request.method, path {
+    Get, [] ->
+      response.new(200)
+      |> response.set_body(bytes_tree.from_string("a chat server"))
+    _, _ ->
+      response.new(200)
+      |> response.set_body(bytes_tree.from_string("hello"))
+  }
+}

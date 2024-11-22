@@ -1,0 +1,14 @@
+{
+    "build": {
+        "dockerfile": "dockerfile",
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": ["gleam.gleam"],
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "bash",
+                "terminal.integrated.profiles.linux": { "bash": { "path": "/bin/bash" } }
+            }
+        }
+    }
+}
